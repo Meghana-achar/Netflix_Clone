@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.creator-text {
+    color: #e5e5e5;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #e5e5e5;
+}
+
+.hero {
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.play-button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.more-info-button {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #ffffff;
+}
+
+.movie-rows {
+    padding: 20px 40px;
+}
+
+.row {
+    margin-bottom: 40px;
+}
+
+.row h2 {
+    margin-bottom: 16px;
+}
+
+.movie-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.movie-list::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
+    flex: 0 0 auto;
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #ff3333;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+} 
